@@ -1,24 +1,15 @@
 
-html {
-    font-family: system-ui, sans-serif;
-    background: var(--bg-color-light);
-    background-size: 224px;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-:root {
-    --bg-color-light: #edf2f4
-    --bg-color-dark: #2d3142
-    --accent: #4f5d75
-}
-
-code {
-    font-family:
-    Menlo,
-    Monaco,
-    Lucida Console,
-    Liberation Mono,
-    DejaVu Sans Mono,
-    Bitstream Vera Sans Mono,
-    Courier New,
-    monospace;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
