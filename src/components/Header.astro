@@ -5,15 +5,22 @@ import Navigation from "./Navigation.astro"
 ---
 
 <header>
-    <p>Test</p>
-    <Navigation></Navigation>
+    <nav id="header-navbar">
+        <p>Test</p>
+        <Navigation></Navigation>
+    </nav>
 </header>
 
 <style>
     header {
+        margin: 0;
+        padding: 0 1em;
+        background-color: lightgray;
+    }
+
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: lightcyan;
     }
 </style>
