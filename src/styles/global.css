@@ -8,6 +8,7 @@
     rgb(var(--accent-light)) 30%,
     white 60%
     );
+    --black: 0 0 0;
 }
 
 html {
