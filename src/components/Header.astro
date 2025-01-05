@@ -4,24 +4,23 @@
 
 <header>
     <!-- Logo  -->
-    <nav>
-        <a href="/">
-            <img src="" alt="Put img here">
-        </a>
-    </nav>
+    <a href="/" class="header_side" id="header_logo">
+            <img src="" alt="Hello">
+    </a>
 
     <!-- Links throughout website  -->
    
-    <nav>
+    <nav id="header_navigation">
         <a href="/">Home</a>    
-        <a href="/about">About</a>    
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
         <a href="/blog">Blog</a>    
     </nav>
 
     <!-- Social Media  -->
-    <nav>
-        Baz 
-    </nav>
+    <a class="header_side" id="header_socials">
+        Social media logos here 
+    </a>
 </header>
 
 <style>
@@ -29,13 +28,31 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: 24px;
     }
+
+    #header_logo {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    #header_socials {
+        text-align: right;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+    
+    nav {
+        text-align: center;
+    }
+    
     nav a {
         padding: 1em 0.5em;
         color: var(--black);
         border-bottom: 4px solid transparent;
         text-decoration: none;
     }
+
     nav a.active {
         text-decoration: none;
         border-bottom-color: var(--accent);
